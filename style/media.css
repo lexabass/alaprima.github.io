@@ -1,0 +1,112 @@
+@media screen and (max-width: 765px) {
+    .toggle {
+        clear: both;
+        display: block;
+        text-align: center;
+        font-size: 22px;
+        line-height: 40px;
+        width: 100%;
+        color: black;
+        background: #FE0000;
+        transition: all .1s linear;
+    }
+    #checkbox-menu:checked + label .touch li {
+        opacity: 1;
+        visibility: visible;
+        transition: all .7s ease;
+    }
+    #checkbox-menu:checked + label .touch {
+        height: 364px;
+    }
+    .menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 0;
+        transition: height .3s ease;
+    }
+    .menu li {
+        display: flex;
+        align-self: center;
+        width: 95%;
+        opacity: 0;
+        visibility: hidden;
+    }
+    .menu li a {
+        width: 95%;
+        text-align: center;
+        align-self: center;
+        align-content: center;
+        font-size: 1.5rem;
+    }
+    .menu button.logo {
+        margin-top: 0;
+        margin-right: 0;
+        height: 100%;
+        width: 100%;
+        background: none;
+    }
+    .menu li a.paintings {
+        margin-left: 0px;
+    }
+
+
+    /* CONTAINER */
+
+    /* ABOUT */
+    #container {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-around;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 50px;
+        padding: 0px;
+        transition: all .5s ease;
+    }
+    #container ul.about {
+        margin-left: 15px;
+    }
+    #container img.about {
+        max-width: 100%;
+    }
+    #container p {
+        font-size: 1.5rem;
+        margin: 15px 5px;
+    }
+
+    /* CONTACTS */
+
+    #container ul.contacts {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    #container ul.contacts li a{
+        font-size: 1.5rem;
+    }
+
+    /* PAINTINGS */
+
+    #container ul.paintings {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    #container .gallery img {
+        max-width: 100%;
+        margin-top: 15px;
+    }
+    #container .gallery {
+        display: grid;
+        grid-gap: 2rem;
+        grid-template-columns: 1fr;
+    }
+}
