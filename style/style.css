@@ -17,7 +17,7 @@ body, html {
 
 nav {
     margin: auto;
-    max-width: 1100px;
+    max-width: 90vw;
     width: 100%;
 }
 
@@ -28,11 +28,10 @@ nav {
 
 .menu {
     padding: 0;
-    margin: 0;
-    height: 50px;
+    height: 100px;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     list-style-type: none;
 }
@@ -43,14 +42,13 @@ nav {
 }
 
 .menu li a {
+    display: inline-block;
     color: black;
     text-decoration: none;
     align-self: center;
-    align-items: center;
-    font-size: 1.3rem;
-    font-weight: 500;
-    padding: 15px 15px;
-    transition: background .5s linear;
+    font-size: 1.2rem;
+    padding: 5px 10px;
+    transition: transform .5s ease;
 }
 
 .menu li a img {
@@ -58,13 +56,14 @@ nav {
 }
 
 .menu li a:hover {
-    background: #FE0000;
-    color: #fff;
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    border: 3px solid black;
 }
 
 .menu button.logo {
     margin-right: 50px;
-    width: 200px;
+    width: 400px;
     height: 100%;
     border: none;
     background: none;

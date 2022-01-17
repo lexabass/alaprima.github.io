@@ -18,6 +18,11 @@
     #checkbox-menu:checked + label .touch {
         height: 100%;
     }
+    nav {
+        margin: auto;
+        max-width: 100vw;
+        width: 100%;
+    }
     .menu {
         display: flex;
         flex-direction: column;
@@ -111,5 +116,14 @@
         display: grid;
         grid-gap: 2rem;
         grid-template-columns: 1fr;
+    }
+
+    /* SHOP */
+    #container .shop {
+        width: 95%;
+        height: 100%;
+    }
+    hr {
+        width: 95%;
     }
 }
