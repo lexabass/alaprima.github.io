@@ -16,7 +16,7 @@
         transition: all .7s ease;
     }
     #checkbox-menu:checked + label .touch {
-        height: 364px;
+        height: 100%;
     }
     .menu {
         display: flex;
@@ -89,6 +89,9 @@
     }
     #container ul.contacts li a{
         font-size: 1.5rem;
+    }
+    #container a.email {
+        font-size: 1.2rem;
     }
 
     /* PAINTINGS */
