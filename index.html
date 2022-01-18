@@ -16,11 +16,19 @@
             <input type="checkbox" id="checkbox-menu">
             <label for="checkbox-menu">
                 <ul class="menu touch">
-                    <button class="logo"><a href="pages/main.html" data-hash="pages/main"><img src="/images/logo/ЛОГО_КРАСНЫЙ.png" alt="A la prima"></a></button>
+                    <button class="logo"><a href="pages/main.html" data-hash="pages/main"><img src="images/logo/ЛОГО_КРАСНЫЙ.png" alt="A la prima"></a></button>
                     <li><a href="pages/shop.html" data-hash="pages/shop"><img src="images/logo/shop-bag.png" alt="">Магазин</a></li>
                     <li><a class="paintings" href="pages/paintings.html" data-hash="pages/paintings">Картины</a></li>
                     <li><a href="pages/about.html" data-hash="pages/about">О галерее</a></li>
                     <li><a href="pages/contacts.html" data-hash="pages/contacts">Контакты</a></li>
+                    <li>
+                        <p class="lang"><img src="images/logo/language.png" alt="" width="30px">Язык<img id="arrow" src="images/logo/down.png" alt="" width="20px">
+                            <ul class="item-lang">
+                                <li class="header-item-lang-en"><button class="translate"><img src="images/logo/uk.png" alt="" width="40px" height="30px" data-google-lang="en" class="language__img" translate="no"></button></li>
+                                <li class="header-item-lang-en"><button class="translate"><img src="images/logo/ru.png" alt="" width="40px" height="30px" data-google-lang="ru" class="language__img" translate="no"></button></li>
+                            </ul>
+                        </p>
+                    </li>
                 </ul>
                 <span class="toggle">☰</span>
             </label>
@@ -31,7 +39,10 @@
 
 
 
-    <script src="hash.js"></script>
-    <script src="carousel.js"></script>
+    <script src="js/hash.js"></script>
+    <script src="js/carousel.js"></script>
+    <script src="js/google-translate.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+    <script src="https://translate.google.com/translate_a/element.js?cb=TranslateInit"></script>
 </body>
 </html>

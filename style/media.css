@@ -28,12 +28,14 @@
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
+        flex-wrap: wrap;
         height: 0;
         transition: height .3s ease;
     }
     .menu li {
         display: flex;
         align-self: center;
+        justify-content: center;
         width: 95%;
         opacity: 0;
         visibility: hidden;
@@ -54,6 +56,18 @@
     }
     .menu li a.paintings {
         margin-left: 0px;
+    }
+    .menu .lang img#arrow {
+        display: none;
+    }
+    .menu ul.item-lang {
+        list-style-type: none;
+        display: flex;
+        position: relative;
+        opacity: 1;
+        visibility: visible;
+        width: 70%;
+        top: .2rem;
     }
 
 

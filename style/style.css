@@ -14,6 +14,9 @@ body, html {
     /* background: #9aafae; */
     background: #fff;
 }
+body {
+    top: 0px!important;
+}
 
 nav {
     margin: auto;
@@ -75,6 +78,60 @@ nav {
     max-height: 100%;
 }
 
+.menu .translate {
+    background: transparent;
+    border: none;
+}
+.menu ul.item-lang {
+    list-style-type: none;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    width: 120px;
+    top: 70px;
+    transition: .5s ease;
+}
+.menu ul.item-lang img {
+    cursor: pointer;
+    margin-left: 20px;
+
+}
+.menu p.lang img {
+    vertical-align: middle;
+    padding: 10px;
+}
+.menu p.lang {
+    cursor: pointer;
+}
+.menu > li:hover > ul.item-lang {
+    opacity: 1;
+    visibility: visible;
+}
+/* #google_translate_element {
+    position: relative;
+    margin-top: 30px;
+}
+#google_translate_element span {
+    display: inline-block; 
+}
+#google_translate_element:after {
+    content: "";
+    bottom:0;
+    left:0;
+    width:100%;
+    background:white;
+    position: absolute;
+    z-index: 1;
+    height: 40%;
+} */
+/* #google_translate_element select {
+    padding: 10px;
+} */
+.skiptranslate {
+    display: none!important;
+    visibility: hidden!important;
+}
+
 
 /* CONTAINER */
 
@@ -88,7 +145,7 @@ nav {
     justify-content: space-around;
     text-align: center;
     margin-bottom: 50px;
-    padding: 10px 10px 10px 0px;
+    padding: 10px 10px 10px 10px;
     transition: all .5s ease;
 }
 
@@ -118,17 +175,19 @@ nav {
 }
 
 #container ul li a{
+    display: inline-block;
     color: black;
     text-decoration: none;
     align-self: center;
-    font-size: 1rem;
-    padding: 15px 15px;
-    transition: background .5s linear;
+    font-size: 1.2rem;
+    padding: 5px 10px;
+    transition: transform .5s ease;
 }
 
 #container ul li a:hover{
-    background: #FE0000;
-    color: #fff;
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    border: 3px solid black;
 }
 
 #container a.email{
