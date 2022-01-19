@@ -34,6 +34,7 @@
     }
     .menu li {
         display: flex;
+        flex-direction: column;
         align-self: center;
         justify-content: center;
         width: 95%;
@@ -46,6 +47,9 @@
         align-self: center;
         align-content: center;
         font-size: 1.5rem;
+    }
+    .menu li a:hover {
+        border: none;
     }
     .menu button.logo {
         margin-top: 0;
@@ -68,6 +72,40 @@
         visibility: visible;
         width: 70%;
         top: .2rem;
+        max-width: 20%;
+    }
+    .menu ul.item-lang li {
+        justify-content: center;
+        /* max-width: 20%; */
+    }
+    .menu li#translate {
+        flex-direction: row;
+    }
+    .menu ul.paintings {
+        margin: 10px;
+        height: 7vh;
+        width: 95vw;
+        left: 0;
+        padding: 5rem 0 5rem 0;
+        position: relative;
+        /* opacity: 0;
+        visibility: hidden; */
+        display: none;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        list-style-type: none;
+        transition: .5s ease;
+    }
+    .menu ul.paintings li a:hover {
+        -webkit-transform: scale(1.15);
+        transform: scale(1.15);
+        border: none;
+    }
+    .menu > li:hover > ul.paintings {
+        display: flex;
+        border-bottom: 3px solid black;
+        border-top: 3px solid black;
     }
 
 
@@ -131,6 +169,10 @@
         grid-gap: 2rem;
         grid-template-columns: 1fr;
     }
+    #container .gallery .img:hover {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
 
     /* SHOP */
     #container .shop {
@@ -139,5 +181,11 @@
     }
     hr {
         width: 95%;
+    }
+}
+
+@media screen and (max-width: 1366px) {
+    .menu button.logo img {
+        max-width: 70%;
     }
 }
