@@ -1,1 +1,1 @@
-# a la prima gallery web-site
+# a la prima gallery web-site demo
