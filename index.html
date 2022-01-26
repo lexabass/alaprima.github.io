@@ -8,12 +8,16 @@
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/media.css">
     <link rel="icon" href="images/logo/лого закругленный.png">
-    
-    <script src="js/google-translate.js"></script>
-<!--     <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script> -->
+
+    <!-- GOOGLE - TRANSLATE JS -->
+
+    <script src="js/google-translate(old).js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
     <script src="https://translate.google.com/translate_a/element.js?cb=TranslateInit"></script>
+
+    <!-- GOOGLE - TRANSLATE JS END-->
 </head>
 <body>
 
@@ -24,12 +28,12 @@
                 <ul class="menu touch">
                     <button class="logo"><a href="pages/main.html" data-hash="pages/main"><img src="images/logo/ЛОГО_КРАСНЫЙ.png" alt="A la prima"></a></button>
                     <li><a href="pages/shop.html" data-hash="pages/shop"><img src="images/logo/shop-bag.png" alt="">Магазин</a></li>
-                    <li><a class="paintings" href="pages/paintings.html" data-hash="pages/paintings">Картины</a>
+                    <li><a class="paintings" href="pages/arts.html" data-hash="pages/arts">Картины</a>
                         <ul class="paintings">
-                            <li><a href="pages/landscapes.html" data-hash="pages/landscapes">Живопись</a></li>
-                            <li><a href="pages/landscapes.html" data-hash="pages/landscapes">Композиции</a></li>
+                            <li><a href="pages/painting.html" data-hash="pages/landscapes">Живопись</a></li>
+                            <li><a href="pages/compositions.html" data-hash="pages/landscapes">Композиции</a></li>
                             <li><a href="pages/still_lifes.html" data-hash="pages/still_lifes">Натюрморты</a></li>
-                            <li><a href="pages/landscapes.html" data-hash="pages/landscapes">Абстракции</a></li>
+                            <li><a href="pages/abstractions.html" data-hash="pages/landscapes">Абстракции</a></li>
                             <li><a href="pages/landscapes.html" data-hash="pages/landscapes">Пейзажи</a></li>
                         </ul>
                     </li>
@@ -38,8 +42,8 @@
                     <li id="translate">
                         <p class="lang"><img src="images/logo/language.png" alt="" width="30px">Язык<img id="arrow" src="images/logo/down.png" alt="" width="20px">
                             <ul class="item-lang">
-                                <li><button class="translate"><img src="images/logo/uk.png" alt="en" width="40px" height="30px" data-google-lang="en" class="language__img"></button></li>
-                                <li><button class="translate"><img src="images/logo/ru.png" alt="ru" width="40px" height="30px" data-google-lang="ru" class="language__img"></button></li>
+                                <li><button class="translate"><img src="images/logo/uk.png" alt="en" width="40px" height="30px" data-google-lang="en" class="language__img" ></button></li>
+                                <li><button class="translate"><img src="images/logo/ru.png" alt="ru" width="40px" height="30px" data-google-lang="ru" class="language__img" ></button></li>
                             </ul>
                         </p>
                     </li>
@@ -55,6 +59,5 @@
 
     <script src="js/hash.js"></script>
     <script src="js/carousel.js"></script>
-    
 </body>
 </html>
